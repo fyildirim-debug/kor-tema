@@ -1,0 +1,12 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [ { "Email": "posta@furkanyildirim.com", "Name": "Furkan YILDIRIM" } ],
+        "Description": "Koyu grafit zemin, kor rengi vurgu; solda dok, ustte saat",
+        "Id": "org.furkan.kor",
+        "License": "GPL-2.0+",
+        "Name": "Kor",
+        "Version": "1.0"
+    },
+    "X-Plasma-APIVersion": "2"
+}

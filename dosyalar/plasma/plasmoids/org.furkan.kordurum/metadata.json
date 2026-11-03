@@ -1,0 +1,14 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [ { "Email": "posta@furkanyildirim.com", "Name": "Furkan YILDIRIM" } ],
+        "Category": "System Information",
+        "Description": "İşlemci, sıcaklık, bellek ve ağ durumunu panelde gösterir",
+        "Icon": "utilities-system-monitor",
+        "Id": "org.furkan.kordurum",
+        "License": "GPL-2.0+",
+        "Name": "Kor Durum",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

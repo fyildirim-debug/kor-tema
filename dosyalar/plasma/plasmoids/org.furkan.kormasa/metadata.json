@@ -1,0 +1,14 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [ { "Email": "posta@furkanyildirim.com", "Name": "Furkan YILDIRIM" } ],
+        "Category": "System Information",
+        "Description": "btop özetini masaüstünde sürekli gösterir: işlemci, çekirdekler, bellek, ekran kartı, disk, ağ, en yoğun süreçler",
+        "Icon": "utilities-system-monitor",
+        "Id": "org.furkan.kormasa",
+        "License": "GPL-2.0+",
+        "Name": "Kor Masa",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

@@ -1,0 +1,123 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+# Kor istemi: iki satir, sade, kor rengi vurgu
+add_newline = true
+palette = "kor"
+format = """
+[╭─](fg:cizgi)$os$username$hostname$directory$git_branch$git_commit$git_state$git_status$nodejs$python$rust$golang$php$java$bun$docker_context$fill$cmd_duration$jobs$time
+[╰─](fg:cizgi)$character"""
+
+[palettes.kor]
+kor = "#EE5A36"
+kor2 = "#FF8A6B"
+metin = "#E8E6E3"
+soluk = "#8A8B93"
+cizgi = "#4A4C57"
+yesil = "#5CBE78"
+sari = "#F2AA3C"
+mavi = "#7FB4F0"
+mor = "#C88CE0"
+kirmizi = "#ED5454"
+
+[os]
+disabled = false
+style = "fg:kor"
+format = "[$symbol]($style)"
+
+[os.symbols]
+Arch = " "
+CachyOS = " "
+Linux = " "
+
+[username]
+show_always = true
+style_user = "fg:metin bold"
+style_root = "fg:kirmizi bold"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "fg:soluk"
+format = "[@$hostname]($style) "
+
+[directory]
+style = "fg:kor2 bold"
+read_only = " "
+read_only_style = "fg:kirmizi"
+truncation_length = 4
+truncation_symbol = "…/"
+home_symbol = "~"
+format = "[ $path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+symbol = " "
+style = "fg:mavi"
+format = "[on](fg:soluk) [$symbol$branch]($style) "
+
+[git_commit]
+tag_disabled = false
+style = "fg:mor"
+
+[git_state]
+style = "fg:sari bold"
+
+[git_status]
+style = "fg:sari"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+
+[nodejs]
+symbol = " "
+format = "[$symbol$version](fg:yesil) "
+
+[python]
+symbol = " "
+format = '[${symbol}${version}( \($virtualenv\))](fg:sari) '
+
+[rust]
+symbol = " "
+format = "[$symbol$version](fg:kor2) "
+
+[golang]
+symbol = " "
+format = "[$symbol$version](fg:mavi) "
+
+[php]
+symbol = " "
+format = "[$symbol$version](fg:mor) "
+
+[java]
+symbol = " "
+format = "[$symbol$version](fg:kirmizi) "
+
+[bun]
+format = "[$symbol$version](fg:metin) "
+
+[docker_context]
+symbol = " "
+format = "[$symbol$context](fg:mavi) "
+
+[fill]
+symbol = "·"
+style = "fg:cizgi"
+
+[cmd_duration]
+min_time = 1500
+style = "fg:sari"
+format = " [ $duration]($style)"
+
+[jobs]
+symbol = " "
+style = "fg:mor"
+
+[time]
+disabled = false
+style = "fg:soluk"
+time_format = "%H:%M:%S"
+format = " [ $time]($style)"
+
+[character]
+success_symbol = "[❯](bold fg:kor)"
+error_symbol = "[❯](bold fg:kirmizi)"
+vimcmd_symbol = "[❮](bold fg:yesil)"

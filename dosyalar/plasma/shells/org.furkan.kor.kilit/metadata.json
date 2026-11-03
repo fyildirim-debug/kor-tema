@@ -1,0 +1,12 @@
+{
+    "KPackageStructure": "Plasma/Shell",
+    "KPlugin": {
+        "Authors": [ { "Email": "posta@furkanyildirim.com", "Name": "Furkan YILDIRIM" } ],
+        "Description": "Kor kilit ekranı; geri kalan her şey org.kde.plasma.desktop kabuğundan gelir",
+        "Id": "org.furkan.kor.kilit",
+        "Name": "Kor Kilit",
+        "Version": "1.0"
+    },
+    "X-Plasma-APIVersion": "2",
+    "X-Plasma-FallbackPackage": "org.kde.plasma.desktop"
+}
