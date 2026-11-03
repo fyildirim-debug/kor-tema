@@ -83,6 +83,10 @@ InactiveOutlineUseCustom=true
 InactiveOutlineUsePalette=false
 EOF
 
+# Win tusu tek basina: Genel Bakis (tum acik pencereler)
+kw --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Overview"
+kw --file kwinrc --group Plugins --key overviewEnabled true
+
 # acilis ve kilit ekrani
 kw --file ksplashrc --group KSplash --key Theme org.furkan.kor
 kw --file ksplashrc --group KSplash --key Engine KSplashQML
