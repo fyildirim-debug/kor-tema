@@ -100,5 +100,12 @@ kw --file katerc --group "KTextEditor Renderer" --key "Color Theme" Kor
 kw --file katerc --group "KTextEditor Renderer" --key "Text Font" "JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
 
 qdbus6 org.kde.KWin /KWin reconfigure >/dev/null 2>&1 || true
+
+# Win tusunu uygulama baslaticidan al (yalniz Alt+F1 kalsin); Win tek basina Genel Bakis'i acar
+busctl --user call org.kde.kglobalaccel /kglobalaccel org.kde.KGlobalAccel setForeignShortcutKeys 'asa(ai)' \
+    4 plasmashell "activate application launcher" plasmashell "Uygulama Başlatıcısını Etkinleştir" \
+    1 1 $(( 0x08000000 | 0x01000030 )) >/dev/null 2>&1 \
+  || kw --file kglobalshortcutsrc --group plasmashell --key "activate application launcher" "Alt+F1,Meta\tAlt+F1,Uygulama Başlatıcısını Etkinleştir"
+
 rm -f "$HOME/.config/autostart/kor-tema-uygula.desktop"
 echo "Kor uygulandi."
