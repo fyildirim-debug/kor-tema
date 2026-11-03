@@ -2,6 +2,22 @@
 
 Furkan YILDIRIM'ın KDE Plasma 6 masaüstü teması: koyu grafit zemin, tek kor rengi vurgu, solda tam boy dok, üstte ince çubuk ve ortada saat. Duvar kağıdı, Furkan'ın gerçek projelerinin `git log --graph` çizimi.
 
+![Kor masaüstü](ekran/masaustu.png)
+
+![Ghostty, fastfetch ve starship istemi](ekran/terminal.png)
+
+| Kilit ekranı | Açılış ekranı |
+|---|---|
+| ![Kor kilit ekranı](ekran/kilit.png) | ![Kor açılış ekranı](ekran/acilis.png) |
+
+<img src="ekran/kormasa.png" alt="Kor Masa: masaüstünde ASCII btop özeti" width="320" align="right">
+
+**Kor Masa**, masaüstünde duran btop özetidir: işlemci geçmişi ve 20 çekirdeğin her biri, bellek, takas, ekran kartı, disk, ağ geçmişi ve en yoğun beş süreç. Tamamen ASCII kipinde, arka planı saydam.
+
+Üst çubuktaki **Kor Durum** göstergesi aynı verinin tek satırlık özetini verir: cpu, sıcaklık, gpu, bellek ve ağ.
+
+<br clear="right">
+
 ## Tek komutla kurulum
 
 Arch tabanlı bir dağıtımda (CachyOS, Arch, EndeavourOS), Plasma oturumu açıkken kendi kullanıcınla çalıştır:
