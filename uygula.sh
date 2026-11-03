@@ -83,8 +83,6 @@ InactiveOutlineUseCustom=true
 InactiveOutlineUsePalette=false
 EOF
 
-# Win tusu tek basina: Genel Bakis (tum acik pencereler)
-kw --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Overview"
 kw --file kwinrc --group Plugins --key overviewEnabled true
 
 # acilis ve kilit ekrani
@@ -106,6 +104,11 @@ busctl --user call org.kde.kglobalaccel /kglobalaccel org.kde.KGlobalAccel setFo
     4 plasmashell "activate application launcher" plasmashell "Uygulama Başlatıcısını Etkinleştir" \
     1 1 $(( 0x08000000 | 0x01000030 )) >/dev/null 2>&1 \
   || kw --file kglobalshortcutsrc --group plasmashell --key "activate application launcher" "Alt+F1,Meta\tAlt+F1,Uygulama Başlatıcısını Etkinleştir"
+# Plasma 6.8'de tek basina Win, kwinrc ModifierOnlyShortcuts ile degil kglobalaccel uzerinden baglanir
+busctl --user call org.kde.kglobalaccel /kglobalaccel org.kde.KGlobalAccel setForeignShortcutKeys 'asa(ai)' \
+    4 kwin Overview KWin "Genel Görünümü Aç/Kapat" \
+    2 4 $((0x01000022)) 0 0 0 4 $((0x10000000 | 0x57)) 0 0 0 >/dev/null 2>&1 \
+  || kw --file kglobalshortcutsrc --group kwin --key Overview "Meta\tMeta+W,Meta+W,Genel Görünümü Aç/Kapat"
 
 rm -f "$HOME/.config/autostart/kor-tema-uygula.desktop"
 echo "Kor uygulandi."
