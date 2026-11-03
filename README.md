@@ -57,7 +57,7 @@ Kurulum güncelleme için de aynı komutla tekrar çalıştırılabilir. Her ça
 | Ghostty, btop, fastfetch, starship, zoxide, Kate, GTK | `dosyalar/config` |
 | Giriş ekranı: Breeze + Kor duvar kağıdı + Bibata imleç | SDDM |
 
-Kurulan paketler: `papirus-icon-theme`, `ttf-ubuntu-font-family`, `ttf-jetbrains-mono-nerd`, `ghostty`, `starship`, `zoxide`, `btop`, `fastfetch`, `kate`, AUR'dan `bibata-cursor-theme-bin`, `kwin-effect-rounded-corners`, `kwin-effects-better-blur-dx`. AUR için paru/yay varsa onu, yoksa doğrudan `makepkg` kullanır.
+Kurulan paketler: `papirus-icon-theme`, `ttf-ubuntu-font-family`, `ttf-jetbrains-mono-nerd`, `ghostty`, `starship`, `zoxide`, `btop`, `fastfetch`, `kate`, `wl-clipboard`, AUR'dan `bibata-cursor-theme-bin`, `kwin-effect-rounded-corners`, `kwin-effects-better-blur-dx`. AUR için paru/yay varsa onu, yoksa doğrudan `makepkg` kullanır.
 
 ## Duvar kağıdını yeniden üretmek
 

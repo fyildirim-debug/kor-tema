@@ -55,7 +55,7 @@ printf "\n${k}kor${z} ${s}❯ tema kurulumu${z}\n\n"
 
 # ---------------------------------------------------------------- paketler
 DEPO_PAKETLER=(git base-devel librsvg papirus-icon-theme ttf-ubuntu-font-family ttf-jetbrains-mono-nerd
-               ghostty starship zoxide btop fastfetch kate qt6-5compat)
+               ghostty starship zoxide btop fastfetch kate qt6-5compat wl-clipboard)
 AUR_PAKETLER=(bibata-cursor-theme-bin kwin-effect-rounded-corners kwin-effects-better-blur-dx)
 
 aur_kur() {
