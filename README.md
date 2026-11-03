@@ -4,7 +4,7 @@ Furkan YILDIRIM'ın KDE Plasma 6 masaüstü teması: koyu grafit zemin, tek kor 
 
 ![Kor masaüstü](ekran/masaustu.png)
 
-![Ghostty, fastfetch ve starship istemi](ekran/terminal.png)
+![Ghostty: FY grafiti logolu fastfetch ve starship istemi](ekran/terminal.png)
 
 | Kilit ekranı | Açılış ekranı |
 |---|---|

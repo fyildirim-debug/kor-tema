@@ -133,7 +133,7 @@ mkdir -p "$C/ghostty/themes" "$C/btop/themes" "$C/fastfetch" "$C/gtk-3.0" "$C/gt
 cp "$D/config/ghostty/config" "$C/ghostty/config"
 cp "$D/config/ghostty/themes/kor" "$C/ghostty/themes/kor"
 cp "$D/config/btop/themes/kor.theme" "$C/btop/themes/kor.theme"
-cp "$D/config/fastfetch/config.jsonc" "$C/fastfetch/config.jsonc"
+cp "$D/config/fastfetch/config.jsonc" "$D/config/fastfetch/fy.txt" "$C/fastfetch/"
 cp "$D/config/starship.toml" "$C/starship.toml"
 cp "$D/config/gtk-3.0/settings.ini" "$C/gtk-3.0/settings.ini"
 cp "$D/config/gtk-4.0/settings.ini" "$C/gtk-4.0/settings.ini"
