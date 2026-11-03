@@ -54,8 +54,31 @@ Kurulum güncelleme için de aynı komutla tekrar çalıştırılabilir. Her ça
 | Kilit ekranı | `org.furkan.kor.kilit` kabuk paketi + KWin ortam ayarı |
 | Simge teması (Papirus-Dark + kor rengi klasörler) | `Kor` |
 | Pencereler: Breeze kenar, yuvarlak köşe, kor–amber çerçeve, bulanıklık | KWin ayarları |
-| Ghostty, btop, fastfetch, starship, zoxide, Kate, GTK | `dosyalar/config` |
+| Ghostty, btop, fastfetch (FY grafiti logosu), starship, zoxide, Kate, GTK | `dosyalar/config` |
 | Giriş ekranı: Breeze + Kor duvar kağıdı + Bibata imleç | SDDM |
+| Kısayollar: Win → Genel Görünüm, Alt+F1 → uygulama başlatıcı | kglobalaccel |
+
+## Kısayollar ve davranışlar
+
+| Tuş | İş |
+|---|---|
+| Win | Genel Görünüm: açık pencerelerin hepsi küçük resim olarak, üstte arama ve çalışma alanları |
+| Win+W | Genel Görünüm (aynısı) |
+| Alt+F1 | Uygulama başlatıcı (doktaki ızgara simgesi) |
+| Ctrl+F10 | Bütün çalışma alanlarının pencereleri birlikte |
+| Ctrl+Alt+T | Ghostty |
+
+- 4 çalışma alanı var; etkin olanı üst çubuğun solunda kor rengiyle görünür.
+- Pencere düğmeleri sağda; etkin pencerenin çerçevesi kor→amber geçişli, ekranı kaplayınca çerçeve kalkar.
+- Kor Masa ve Kor Durum tıklamaya tepki vermez; yalnız gösterir.
+- Kilit ekranında saat JetBrains Mono, tarih Türkçe; alttaki commit çizgisinde HEAD gün boyunca soldan sağa ilerler.
+- Terminal programlarının panoya yazabilmesi için `wl-clipboard` kurulur (Wayland'da Claude Code gibi araçlar `wl-copy` kullanır).
+
+## Bilinen notlar
+
+- Plasma 6 kilit ekranını görünüm paketinden değil kabuk paketinden yükler. Kor, kilit ekranını `org.furkan.kor.kilit` kabuk paketiyle verir ve bu paketi yalnız KWin'e `PLASMA_DEFAULT_SHELL` ile tanıtır (`~/.config/systemd/user/plasma-kwin_wayland.service.d/kor-kilit.conf`). Masaüstü kabuğu etkilenmez. Büyük bir Plasma güncellemesinden sonra kilit ekranı bozuk açılırsa bu dosyayı silip yeniden gir.
+- Plasma 6.8'de Win tuşunu tek başına bağlamak `kwinrc` `ModifierOnlyShortcuts` ile değil kglobalaccel üzerinden olur; `uygula.sh` bunu D-Bus ile yapar.
+- Dok listesinde Mailhere, OfficeHere, VSCodium ve Claude Code da var; kurulu olmayanların kısayolu görünmez.
 
 Kurulan paketler: `papirus-icon-theme`, `ttf-ubuntu-font-family`, `ttf-jetbrains-mono-nerd`, `ghostty`, `starship`, `zoxide`, `btop`, `fastfetch`, `kate`, `wl-clipboard`, AUR'dan `bibata-cursor-theme-bin`, `kwin-effect-rounded-corners`, `kwin-effects-better-blur-dx`. AUR için paru/yay varsa onu, yoksa doğrudan `makepkg` kullanır.
 
