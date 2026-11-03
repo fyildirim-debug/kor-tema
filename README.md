@@ -65,6 +65,14 @@ Kurulan paketler: `papirus-icon-theme`, `ttf-ubuntu-font-family`, `ttf-jetbrains
 python3 araclar/duvar.py ~/.local/share/wallpapers/KorFurkan/contents/images
 ```
 
+## FY logosunu yeniden üretmek
+
+Fastfetch'teki FY logosu, `araclar/fy-grafiti.png` grafiti çiziminin renkli Braille noktalarına çevrilmiş hâlidir (Pillow gerekir):
+
+```bash
+python3 araclar/fy-braille.py araclar/fy-grafiti.png 38 ~/.config/fastfetch/fy.txt
+```
+
 ## Lisans
 
 Kor'a ait dosyalar (renk şeması, görünüm paketi, widget'lar, betikler) GPL-2.0-or-later, duvar kağıdı CC-BY-SA-4.0. Kilit ekranı KDE Plasma'nın kilit ekranından türetilmiştir (GPL). Papirus, Bibata, Breeze, KWin eklentileri ve yazı tipleri kendi lisanslarıyla paket olarak kurulur; depoya gömülmez.
